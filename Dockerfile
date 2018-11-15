@@ -5,9 +5,9 @@ RUN apt-get install -y g++
 
 WORKDIR /go/src
 RUN go get github.com/gorilla/pat
-RUN git clone https://github.com/companieshouse/go-tiff2pdf github.com/companieshouse/go-tiff2pdf
+RUN git clone https://github.com/dhf0820/go-tiff2pdf github.com/dhf0820/go-tiff2pdf
 
-WORKDIR /go/src/github.com/companieshouse/go-tiff2pdf
+WORKDIR /go/src/github.com/dhf0820/go-tiff2pdf
 RUN make
 RUN go install ./tiff2pdf-service
 
